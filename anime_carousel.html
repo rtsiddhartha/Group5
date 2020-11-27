@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Anime Carousel</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+            <h1 style="text-align: center">Welcome to Anime World</h1>
+            <p style="text-align: center">Discover your new Anime Wallpaper.</p>
+        </header>
+        
+        <nav></nav>
+        
+        <main>
+            <div class="anime">
+                <div><img src="images/a1.jpg" width="1200" height="700" title="Neon Genesis Evangelion"></div>
+                <div><img src="images/a2.jpg" width="1200" height="700" title="The Seven Deadly Sins"></div>
+                <div><img src="images/a3.png" width="1200" height="700" title="Haikyuu!"></div>
+                <div><img src="images/a4.png" width="1200" height="700" title="One Punch Man"></div>
+                <div><img src="images/a5.jpg" width="1200" height="700" title="Death Note"></div>
+                <div><img src="images/a6.jpg" width="1200" height="700" title="Attack On Titan"></div>
+            </div>
+            <script>
+            $('.anime').bxSlider({
+                captions: true,
+                mode: 'fade',
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 1200
+            })
+        </script>
+        </main>
+        
+        <footer>
+        
+        </footer>
+    </body>
+</html>
